@@ -13,11 +13,12 @@ public class Calculator {
     public double division(double a, double b){
         return a/b;
     }
-    public int division(int c, int d){
-        return c/d;
+    public double division(int c, int d){
+        return (double) c/d;
     }
-    public long division(long e, long f){
-        return e/f;
+
+    public double division(long e, long f){
+        return (double) e/f;
     }
     public double multiplication(double a, double b){
         return a*b;
