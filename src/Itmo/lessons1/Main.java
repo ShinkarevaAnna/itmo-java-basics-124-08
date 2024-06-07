@@ -14,6 +14,7 @@ public class Main {
         System.out.println(task2.expressionResult1());
         System.out.println(task2.expressionResult2());
         task3.count();
+
         task4.multiplication();
         task5.outPutNumbers();
         task6.condition();
