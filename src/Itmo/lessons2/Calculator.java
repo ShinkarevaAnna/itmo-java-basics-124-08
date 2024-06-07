@@ -17,6 +17,7 @@ public class Calculator {
         return (double) c/d;
     }
 
+
     public double division(long e, long f){
         return (double) e/f;
     }
