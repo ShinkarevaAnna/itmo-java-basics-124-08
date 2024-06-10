@@ -14,7 +14,7 @@ public class Contains {
         return check;
     }
 
-    public static void fillMassive(int[] arr) {
+    public static void fillArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 10);
         }
@@ -24,7 +24,7 @@ public class Contains {
         int[] array = new int[9];
         int key = 1;
         int key1 = 3;
-        fillMassive(array);
+        fillArray(array);
         System.out.println("array = " + Arrays.toString(array));
         System.out.println(check(array, key, key1));
     }

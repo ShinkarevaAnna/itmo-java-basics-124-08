@@ -3,7 +3,7 @@ package Itmo.lessons4.Part2;
 import java.util.Arrays;
 
 public class Sort {
-    public static void fillMassive(int[] arr) {
+    public static void fillArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 100);
         }
@@ -52,7 +52,7 @@ public class Sort {
 
     public static void main(String[] args) {
         int[] array = new int[9];
-        fillMassive(array);
+        fillArray(array);
         System.out.println("Array before sort: " + Arrays.toString(array));
         sort(array, 0, array.length - 1);
         System.out.println("Array after sort: " + Arrays.toString(array));

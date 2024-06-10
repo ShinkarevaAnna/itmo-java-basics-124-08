@@ -1,21 +1,17 @@
 package Itmo.lessons4.Part1;
 
-public class IsFirstOrLast {
+public class FirstOrLast {
     public static boolean check(int[] arr) {
-        boolean check = false;
-        if (arr[0] == 3 || arr[arr.length - 1] == 3) {
-            check = true;
-        }
-        return check;
+        return (arr[0] == 3) || (arr[arr.length - 1] == 3);
     }
 
-    public static void fillMassive(int[] arr) {
+    public static void fillArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 10);
         }
     }
 
-    public static void print(int[] arr) {
+    public static void printArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
@@ -24,9 +20,9 @@ public class IsFirstOrLast {
 
     public static void main(String[] args) {
         int[] array = new int[8];
-        fillMassive(array);
+        fillArray(array);
         System.out.print("array = ");
-        print(array);
+        printArray(array);
         System.out.println(check(array));
     }
 }

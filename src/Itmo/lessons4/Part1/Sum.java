@@ -4,12 +4,8 @@ import java.util.Scanner;
 
 public class Sum {
     public static boolean sum(int num1, int num2, int num3) {
-        boolean result = false;
         int sum = num1 + num2;
-        if (sum == num3) {
-            result = true;
-        }
-        return result;
+        return sum == num3;
     }
 
     public static void main(String[] args) {
