@@ -4,14 +4,12 @@ import java.util.Arrays;
 
 public class Contains {
     public static boolean check(int[] arr, int key, int key1) {
-        boolean check = false;
         for (int element : arr) {
             if (element == key || element == key1) {
-                check = true;
-                break;
+                return true;
             }
         }
-        return check;
+        return false;
     }
 
     public static void fillArray(int[] arr) {
