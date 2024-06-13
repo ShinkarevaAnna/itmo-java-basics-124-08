@@ -6,16 +6,14 @@ public class SearchWorld {
         if (s != null || !s.isEmpty()) {
             String[] split = s.split(" ");
             int maxLength = 0;
+            String longestWord= "";
             for (String str : split) {
                 if (str.length() > maxLength) {
                     maxLength = str.length();
+                    longestWord = str;
                 }
             }
-            for (String str2 : split) {
-                if (str2.length() == maxLength) {
-                    System.out.println("The longest word is " + str2);
-                }
-            }
+            System.out.println("The longest word is " + longestWord);
         }
     }
 

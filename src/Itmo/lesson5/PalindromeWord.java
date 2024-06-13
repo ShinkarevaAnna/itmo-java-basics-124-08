@@ -1,27 +1,19 @@
 package Itmo.lesson5;
 
 public class PalindromeWord {
-    public static String palindrome(String string) {
-        String palindrome = "";
-        if (string != null || !string.isEmpty()) {
-            StringBuilder stb = new StringBuilder(string);
-            palindrome = String.valueOf(stb.reverse());
+    public static boolean isPalindrome(String s) {
+        boolean isPalindrome = false;
+        if (s != null || !s.isEmpty()) {
+            StringBuilder stb = new StringBuilder(s);
+             isPalindrome = s.equalsIgnoreCase(String.valueOf(stb.reverse()));
         }
-        return palindrome;
-    }
-
-    public static boolean equals(String s, String str) {
-        return s.equalsIgnoreCase(str);
+        return isPalindrome;
     }
 
     public static void main(String[] args) {
         String initialWord = "giggle";
         String originalWord = "peep";
-        String palindrome = palindrome(initialWord);
-        String palindrome2 = palindrome(originalWord);
-        System.out.println("original: " + initialWord + ", palindrome: " + palindrome + ", isPalindrome: " +
-                equals(initialWord, palindrome));
-        System.out.println("original: " + originalWord + ", palindrome: " + palindrome2 + ", isPalindrome: " +
-                equals(originalWord, palindrome2));
+        System.out.println("original: " + initialWord + ", isPalindrome: " + isPalindrome(initialWord));
+        System.out.println("original: " + originalWord + ", isPalindrome: " + isPalindrome(originalWord));
     }
 }
