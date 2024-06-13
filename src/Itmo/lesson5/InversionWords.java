@@ -21,10 +21,3 @@ public class InversionWords {
 
     }
 }
-
-
-//5.	Напишите метод, который инвертирует слова в строке. Предполагается, что в строке нет знаков препинания, и слова разделены пробелами.
-//        Sample Output:
-//        The given string is: This is a test string
-//        The string reversed word by word is:
-//        sihT si a tset gnirts
