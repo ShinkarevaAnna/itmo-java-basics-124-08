@@ -5,7 +5,7 @@ public class PalindromeWord {
         boolean isPalindrome = false;
         if (s != null || !s.isEmpty()) {
             StringBuilder stb = new StringBuilder(s);
-             isPalindrome = s.equalsIgnoreCase(String.valueOf(stb.reverse()));
+             isPalindrome = s.equalsIgnoreCase(stb.reverse().toString());
         }
         return isPalindrome;
     }
