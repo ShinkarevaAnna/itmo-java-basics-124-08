@@ -1,14 +1,13 @@
 package Itmo.lessons9Collections.task1;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
+
 public class Duplicates {
 
-    public static Collection withoutDuplications(Collection collection) {
+    public static <T> Set<T> withoutDuplications(Collection<T> collection) {
         return new HashSet<>(collection);
     }
+
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         list.add(5);
