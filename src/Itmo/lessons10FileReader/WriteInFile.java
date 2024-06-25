@@ -8,7 +8,7 @@ public class WriteInFile {
         FileWriter file = null;
         BufferedWriter bufferedWriter = null;
         try {
-            file = new FileWriter(".idea/files/file2.txt");
+            file = new FileWriter("files/file2.txt");
             bufferedWriter = new BufferedWriter(file);
             bufferedWriter.write(line);
         } catch (IOException e) {
