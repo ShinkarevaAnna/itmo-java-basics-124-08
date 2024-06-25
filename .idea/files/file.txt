@@ -1,0 +1,26 @@
+Чтение строк из файла в Java можно выполнить с помощью класса BufferedReader, который позволяет читать текстовые данные из потока ввода. Для чтения строк из файла сначала необходимо открыть файл для чтения, а затем читать строки по одной до тех пор, пока не достигнут конец файла.
+
+Ниже приведен пример кода, который демонстрирует, как считывать строки из файла в Java с помощью BufferedReader:
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("file.txt"));
+            String line = reader.readLine();
+            while (line != null) {
+                System.out.println(line);
+                line = reader.readLine();
+            }
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+В этом примере мы создаем объект BufferedReader с помощью конструктора new BufferedReader(new FileReader("file.txt")), где file.txt - это имя файла, который мы хотим прочитать.
+Затем мы читаем строки из файла, вызывая метод readLine() объекта BufferedReader. Метод readLine() возвращает очередную строку текста из файла или null, если достигнут конец файла.
+Кроме того, обратите внимание, что мы заключили вызов BufferedReader.close() в блок finally, чтобы гарантировать, что поток чтения будет закрыт даже в случае исключения.
